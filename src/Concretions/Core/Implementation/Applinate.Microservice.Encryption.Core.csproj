@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <TargetFrameworks>net6.0</TargetFrameworks>
+	  <Nullable>enable</Nullable>
+	  <Version>0.0.1</Version>
+	  <Authors>Matt Cochran</Authors>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Title>Applinate encryption implementation by TruthShield</Title>
+	  <Copyright>2022 Truthshield</Copyright>
+	  <PackageProjectUrl>https://applinate.com/</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/TruthShield/applinate</RepositoryUrl>
+	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	  <PlatformTarget>AnyCPU</PlatformTarget>
+	  <IncludeSymbols>True</IncludeSymbols>
+	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	  <PackageLicenseFile>License.md</PackageLicenseFile>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <PackageIcon>applinate-icon-128x128.png</PackageIcon>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\docs\images\applinate-icon-128x128.png" Link="applinate-icon-128x128.png">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+    <None Include="..\..\..\..\License.md" Link="License.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+    <None Include="..\..\..\..\README.md" Link="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Applinate.Microservice.Compression.Abstractions" Version="0.1.0" />
+    <PackageReference Include="Applinate.Microservice.Foundation" Version="0.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Abstractions\Applinate.Microservice.Encryption.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

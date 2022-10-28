@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>Applinate Microservice Encryption Abstractions</Title>
+    <Authors>matt-cochran</Authors>
+    <Company>Truth Shield</Company>
+    <Copyright>2022, Truth Shield</Copyright>
+    <PackageProjectUrl>https://applinate.com</PackageProjectUrl>
+    <PackageIcon>applinate-icon-128x128.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>License.md</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\docs\images\applinate-icon-128x128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\License.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Applinate.Microservice.Configuration.Abstractions" Version="0.2.0" />
+    <PackageReference Include="Applinate.Microservice.Foundation" Version="0.3.1" />
+  </ItemGroup>
+
+</Project>

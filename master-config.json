@@ -1,0 +1,13 @@
+{
+  "-----------DB---------------------------------------------------------------------------- ": "",
+  "MsSqlConnection": "__placeholder__",
+  "MySqlConnection": "__placeholder__",
+  "PostgreSQLConnection": "__placeholder__",
+  "MySqlVersion": "__placeholder__",
+  "Provider": "__placeholder__",
+  "SkipDbUpgrade": "__placeholder__",
+
+  "-----------ENCRYPTION---------------------------------------------------------------------------- ": "",
+  "CertificateKey": "D4697050C3942AB4968CEBD81D53615C04E03B62"
+
+}
