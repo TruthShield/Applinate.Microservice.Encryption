@@ -21,7 +21,7 @@ namespace Applinate.Encryption.Tests
         }
     }
 
-    public class EncryptionTestBase : TestBase, IDisposable
+    public class EncryptionTestBase : ApplinateTestBase, IDisposable
     {
         public string Thumbprint { get; }
         public EncryptionTestBase()
